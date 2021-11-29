@@ -23,7 +23,7 @@
                             </a>
                             <ul class="header-list">
                                 <li class="header-item">
-                                    <a class="header-link" href="./index.html">Студия</a>
+                                    <a class="header-link activ" href="./index.html">Студия</a>
                                 </li>
                                 <li class="header-item">
                                     <a class="header-link" href="./portfolio.html">Портфолио</a>
@@ -57,7 +57,7 @@
                     <section class="hero">
                         <div class="conteiner">
                             <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-                            <button class="hero-btn" type="button">Заказать услугу</button>
+                            <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
                         </div>
                     </section>
 
@@ -112,13 +112,16 @@
                             <h2 class="title-h2 working-title">Чем мы занимаемся</h2>
                             <ul class="work-list">
                                 <li class="working-item">
-                                    <img src="./images/box1.jpg" alt="компьютерный стол на котором стоит компьютер и планшет" width="370" height="294">
+                                        <img src="./images/box1.jpg" alt="компьютерный стол на котором стоит компьютер и планшет" width="370" height="294">
+                                        <p class="work-desc">Десктопные приложения</p>
                                 </li>
                                 <li class="working-item">
-                                    <img src="./images/box2.jpg" alt="человек с телефоном и ноутбуком за столом" width="370" height="294">
+                                        <img src="./images/box2.jpg" alt="человек с телефоном и ноутбуком за столом" width="370" height="294">
+                                        <p class="work-desc">Мобильные приложения</p>
                                 </li>
                                 <li class="working-item">
-                                    <img src="./images/box3.jpg" alt="человек рисует на планшете" width="370" height="294">
+                                        <img src="./images/box3.jpg" alt="человек рисует на планшете" width="370" height="294">
+                                        <p class="work-desc">Дизайнерские решения</p>
                                 </li>
                             </ul>
                         </div>
@@ -389,5 +392,17 @@
                         </div>
                     </div>
                 </footer>
+
+                <!-- Section Modal -->
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <button type="button" class="modal-close" data-modal-close>
+                            <svg class="modal-icon-close" width="18" height="18">
+                                <use href="./images/icons.svg#icon-close" ></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <script src="./js/modal.js"></script>
         </body>
 </html>
